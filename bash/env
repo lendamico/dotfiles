@@ -1,0 +1,13 @@
+# use MAMP's version of PHP for wp-cli
+export MAMP_PHP=/Applications/MAMP/bin/php/php5.5.10/bin
+export PATH="$MAMP_PHP:~/bin:$PATH"
+
+# Add php for wp-cli
+#export WP_CLI_PHP=/usr/bin/php
+export WP_CLI_PHP=/Applications/MAMP/bin/php/php5.3.6/bin
+
+# set TextMate as editor
+export EDITOR="mate -w"
+
+# Add RVM to PATH for scripting
+export PATH="/usr/local/opt/ruby/bin:$PATH:~/.rvm/bin"

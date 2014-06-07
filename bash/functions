@@ -1,0 +1,37 @@
+# functions
+
+# create a new dir and cd into it
+function take {
+	mkdir $1
+	cd $1
+}
+
+# converts a folder full of pngs into a pdf with ImageMagick
+function pdf {
+	convert *.png "$*".pdf
+	}
+
+# accepts user input to scaffold a blank theme with wp-cli
+function scaffold {
+	read -p "Theme slug? " slug	
+	read -p "Theme name? " theme_name
+	wp scaffold _s $slug --activate --theme_name=$theme_name --author=LenDamico --author_uri=http://lendamico.com
+	cd wp-content/themes/$slug
+}
+
+# ngrok
+function ng {
+	ngrok -subdomain=$1 $2
+	open -a Safari http://localhost:4040
+	open -a Duo http://$1.ngrok.com
+	}
+function ngj {
+	ngrok -subdomain=$1 4000
+	open -a Safari http://localhost:4040
+	open -a Duo http://$1.ngrok.com
+	}
+
+# git checkout branch (accepts argument)
+function gcb {
+		git checkout -b "$*"
+	}

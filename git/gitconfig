@@ -1,0 +1,25 @@
+# [push]
+ 	default = simple
+
+# adds colorful UI
+[color]
+	ui = auto
+
+# Kaleidoscope as difftool
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope
+
+# sets TextMate as editor
+[core]
+	editor = mate -w

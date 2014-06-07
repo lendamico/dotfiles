@@ -1,0 +1,62 @@
+# common commands
+alias tu='top -o cpu' # cpu
+alias tm='top -o vsize' # memory
+alias h="history"
+alias l="ls -laGh" # long, colorful list of all files with human-readable sizes
+alias lns="ln -s" # symbolic link
+alias mk="mkdir"
+
+# Text Editors
+alias b="bbedit"
+alias b.="bbedit ."
+alias m="mate"
+alias m.="mate ."
+
+# dotfiles management
+alias reload="source ~/bin/dotfiles/bashrc"
+alias ea="mate -w ~/bin/dotfiles/bash/aliases && reload" # Edit aliases
+alias ee="mate -w ~/bin/dotfiles/bash/env && reload" # Edit env
+alias ec="mate -w ~/bin/dotfiles/bash/config && reload" # Edit config
+
+# Compression
+alias zipr="zip -r"
+alias tarc="tar -czvf"
+alias tarz="tar -zxvf"
+
+# Navigation & Finder
+alias d="cd ~/Dropbox"
+alias bin="cd ~/bin"
+alias dotfiles="cd ~/bin/dotfiles"
+alias ap="cd ~/Dropbox/_Active\ Projects"
+alias active="ap && l"
+alias o="open"
+alias o.="open ."
+alias ..="cd .."
+
+# git
+alias gi="git init"
+alias gb="git branch"
+alias gs="git status"
+alias ga="git add"
+alias ga.="git add -A"
+alias gc="git commit"
+alias gp="git push"
+alias gk="git difftool" # k for kaleidoscope
+alias gn="git notes add"
+alias clone="git clone"
+
+# wordpress
+alias theme="wp-content/themes"
+alias plugin="wp-content/plugins"
+
+# jekyll
+alias js="jekyll server"
+alias jsw="jekyll server --watch"
+alias jb="jekyll build"
+alias jbw="jekyll build --watch"
+alias r="rake"
+
+# bootstraps
+alias scssboot=". ~/bin/dotfiles/bootstraps/scss.sh"
+alias wpboot=". ~/bin/dotfiles/bootstraps/wp.sh"
+alias osxboot=". ~/bin/dotfiles/bootstraps/osx.sh"
