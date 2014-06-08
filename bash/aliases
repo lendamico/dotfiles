@@ -58,5 +58,6 @@ alias r="rake"
 
 # bootstraps
 alias scssboot=". ~/bin/dotfiles/bootstraps/scss.sh"
-alias wpboot=". ~/bin/dotfiles/bootstraps/wp.sh"
+alias wpboot=". ~/bin/dotfiles/bootstraps/wp_private.sh"
+alias wpboot2=". ~/bin/dotfiles/bootstraps/wp.sh"
 alias osxboot=". ~/bin/dotfiles/bootstraps/osx.sh"
