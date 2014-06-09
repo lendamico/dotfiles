@@ -39,3 +39,4 @@ BCYAN='\e[46m'
 BWHITE='\e[47m'
 
 source ~/bin/dotfiles/bash/sexyprompt
+source ~/bin/dotfiles/bash/tab

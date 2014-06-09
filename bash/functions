@@ -30,6 +30,12 @@ function ngj {
 	open -a Safari http://localhost:4040
 	open -a Duo http://$1.ngrok.com
 	}
+function ngw {
+	open -a Safari http://localhost:4040
+	open -a Duo http://$1.ngrok.com
+	tab
+	ngrok -subdomain=$1 80
+	}
 
 # git checkout branch (accepts argument)
 function gcb {

@@ -26,6 +26,8 @@ brew cask install transmit
 brew cask install imagealpha
 brew cask install imageoptim
 brew cask install mamp
+brew install mysql
+sudo ln -s /Applications/MAMP/tmp/mysql/mysql.sock /tmp/mysql.sock
 brew cask install marked
 brew install wget
 brew install tree
