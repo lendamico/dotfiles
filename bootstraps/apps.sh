@@ -18,7 +18,6 @@ brew cask install textexpander
 brew cask install wacom-bamboo-tablet
 
 # dev tools
-
 brew cask install iterm2
 brew cask install codekit
 brew cask install cd-to
@@ -39,6 +38,7 @@ gem install jekyll
 gem install bourbon
 gem install neat
 gem install bitters
+brew install chrome-cli
 # wp-cli
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 chmod +x wp-cli.phar
@@ -53,6 +53,10 @@ brew cask install harvest
 brew cask install hazel
 brew cask install backblaze-downloader
 brew cask install vlc
+brew cask install paparazzi
+brew cask install fluid
+brew cask install superduper
+brew install exiftool
 
 # browsers
 brew cask install google-chrome
@@ -67,3 +71,6 @@ brew cask install handbrake
 
 # 1325-1610-2178-4473-7614-7642
 
+# removing stuff
+sudo rm -rf /Applications/TextEdit.app
+sudo rm -rf /Applications/Preview.app

@@ -32,6 +32,8 @@ alias active="ap && l"
 alias o="open"
 alias o.="open ."
 alias ..="cd .."
+alias jjhead="jhead -n%Y-%m-%d_%H.%M.%S *.jpg"
+alias Jhead="jhead -n%Y-%m-%d_%H.%M.%S *.JPG"
 
 # git
 alias gi="git init"
@@ -62,3 +64,7 @@ alias wpboot=". ~/bin/dotfiles/bootstraps/wp_private.sh"
 alias wpboot2=". ~/bin/dotfiles/bootstraps/wp.sh"
 alias osxboot=". ~/bin/dotfiles/bootstraps/osx.sh"
 alias fontboot=". ~/bin/dotfiles/bootstraps/fonts.sh"
+
+# resources
+alias updateskech="cd ~/Library/Containers/com.bohemiancoding.sketch3/Data/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins && git pull"
+# alias updatefonts="cd ~/Library/Fonts/ && git pull"

@@ -41,3 +41,7 @@ function ngw {
 function gcb {
 		git checkout -b "$*"
 	}
+	
+function link {
+	ln -s /Volumes/CV3/$* ~/Dropbox/$*
+}
